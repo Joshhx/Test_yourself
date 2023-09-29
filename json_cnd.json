@@ -1,0 +1,743 @@
+{
+	"nombre": "LPIC1",
+	"test":[
+		{
+			"numero": 1,
+			"tipo": "test",
+   			"enunciado": "A backup software heavily uses hard links between files which have not been changed in between two backup runs. Which benefits are realized due to these hard links? (Choose TWO correct answers)",
+			"respuestas": {
+				"a": "The backup runs faster because hard links are asynchronous operations, postponing the copy operation to a later point in time",
+				"b": "The backup runs faster because, instead of copying the data of each file, hard links only change file system meta data",
+				"c": "The backup is guaranteed to be unchanged because the hard links point to the same data on disk instead of storing redundant copies",
+				"d": "The old backup can be moved to slow backup media, such as tapes, while still serving as hard link target in new backups."
+			},
+   			"resp": ["b","c"]
+		},
+		{
+			"numero": 2,
+			"tipo": "test",
+			"enunciado": "A yum repository can declare sets of related packages. which yum installs all packages belonging to the group admintools?",
+			"respuestas": {
+				"a": "yum install admintools/*",
+				"b": "yum collection install admintools",
+				"c": "yum pkgsel -- install admintools",
+				"d": "yum taskinstall admintools",
+				"e": "yum groupinstall admintools"
+			},
+   			"resp": ["e"]
+		},
+		{
+			"numero": 3,
+			"tipo": "test",
+			"enunciado": "After a power outage, the XFS filesystem of /dev/sda3 is inconsistent. How can the existing file system errors be fixed?",
+			"respuestas": {
+				"a": "By running xfs_repair on the filesystem",
+				"b": "By mounting the file system with the option xfs_repair",
+				"c": "By running xfsck on the filesystem",
+				"d": "By using mount -f to force a mount of the file system",
+				"e": "By runnig xfsadmin repair on the filesystem"
+			},
+			"resp": ["a"]
+		},
+		{
+			"numero": 4,
+			"tipo": "test",
+			"enunciado": "Instead of supplying an explicit device in /etc/fstab for mounting, what other options may be used to identify the intended partition? (Choose TWO correct answers)",
+			"respuestas": {
+				"a": "LABEL",
+				"b": "ID",
+				"c": "NAME",
+				"d": "UUID",
+				"e": "FIND"
+			},
+			"resp": ["a", "d"]
+		},
+		{
+			"numero": 5,
+			"tipo": "test",
+			"enunciado": "The installation of a local Debian package failed due to unsatisfied dependencies. Which of the following comands installs missing dependencies and completes the interrupted package installation?",
+			"respuestas": {
+				"a": "apt-get install -f",
+				"b": "apt-get autoinstall",
+				"c": "dpkg --fix --all",
+				"d": "dpkg reconfigure --all",
+				"e": "apt-fix all"
+			},
+			"resp": ["a"]
+		},
+		{
+			"numero": 6,
+			"tipo": "test",
+			"enunciado": "What are the main diferences between GPT and MBR partition tables regarding maximum number and size of partitions? ( Choose TWO correct answers)",
+			"respuestas": {
+				"a": "Both GPT and MBR support up to four primary partitions, each with up to 4096 TB",
+				"b": "MBR can handle partition sizes up to 2.2 TB, whereas GPT supports sizes up to 9.4 ZB",
+				"c": "MBR can handle partition sizes up to 4 TB,whereas GPT supports partition sizes up to 128 ZB",
+				"d": "By default, GPT can manage up to 128 partitions while MBR only supports four primary partitions",
+				"e": "By default, GPT can manage up to 64 partitions while MBR only supports 16 primary partitions"
+			},
+			"resp": ["b", "d"]
+		},
+		{
+			"numero": 7,
+			"tipo": "test",
+			"enunciado": "What can the Logical Volume Manager (LVM) be used for? (Choose THREE correct answers)",
+			"respuestas": {
+				"a": "To create RAID 9 arrys",
+				"b": "To create snapshots",
+				"c": "To dynamically create or delete logical volumes",
+				"d": "To encrypt logical volumes",
+				"e": "To dynamically change the size of logical volumes"
+			},
+			"resp": ["b", "c", "e"]
+		},
+		{
+			"numero": 8,
+			"tipo": "test",
+			"enunciado": "What is the purpose of the ldd command?",
+			"respuestas": {
+				"a": "It lists which shared libraries a binary needs to run.",
+				"b": "It defines which version of a library should be used by default.",
+				"c": "It runs a binary with an alternate library search path.",
+				"d": "It turns a dynamically linked binary into a static binary.",
+				"e": "It installs and updates installed shared libraries."
+			},
+			"resp": ["a"]
+		},
+		{
+			"numero": 9,
+			"tipo": "test",
+			"enunciado": "When removing a package on a system using dpkg package management, which dpkg option ensures configuration files are removed as well?",
+			"respuestas": {
+				"a": "--purge",
+				"b": "--delete",
+				"c": "--vacuum",
+				"d": "--clean",
+				"e": "--remove"
+			},
+			"resp": ["a"]
+		},
+		{
+			"numero": 10,
+			"tipo": "test",
+			"enunciado": "Which defines the network locations from where the Debian package manager downloads software packages?",
+			"respuestas": {
+				"a": "/etc/apt/sources.list",
+				"b": "/etc/apt/apt.conf",
+				"c": "/etc/apt/apt.conf.d",
+				"d": "/etc/dpkg/dselect.cfg",
+				"e": "/etc/dpkg/dpkg.cfg"
+			},
+			"resp": ["a"]
+		},
+		{
+			"numero": 11,
+			"tipo": "test",
+			"enunciado": "Which of the following commands lists all currently installed packages when using RPM package management?",
+			"respuestas": {
+				"a": "yum --list --installed",
+				"b": "rpm --query --list",
+				"c": "rpm --list --installed",
+				"d": "yum --query --all",
+				"e": "rpm --query --all"
+			},
+			"resp": "e"
+		},
+		{
+			"numero": 12,
+			"tipo": "test",
+			"enunciado": "Which of the following commands are valid in the GRUB 2 configuration file? ( Choose TWO correct answers)",
+			"respuestas": {
+				"a": "uefi",
+				"b": "pxe-ifconfig",
+				"c": "kpartx",
+				"d": "menuentry",
+				"e": "insmod"
+			},
+			"resp": ["d", "e"]
+		},
+		{
+			"numero": 13,
+			"tipo": "test",
+			"enunciado": "Which of the following commands installs the GRUB boot files into the currenty active filesystems and the boot loader into the first partition of the first disk?",
+			"respuestas": {
+				"a": "grub-install /dev/sda1",
+				"b": "grub-install current /dev/sda0",
+				"c": "grub-install current /dev/sda1",
+				"d": "grub-install /dev/sda",
+				"e": "grub-install /dev/sda0"
+			},
+			"resp": ["a"]			
+		},
+		{
+			"numero": 14,
+			"tipo": "test",
+			"enunciado": "Which of the following commands sets the SetUID permission on the executable /bin/foo?",
+			"respuestas": {
+				"a": "chmod 4755 /bin/foo",
+				"b": "chmod 755+s /bin/foo",
+				"c": "chmod u-s /bin/foo",
+				"d": "chmod 2755 /bin/foo",
+				"e": "chmod 1755 /bin/foo"
+			},
+			"resp": ["a"]
+		},
+		{
+			"numero": 15,
+			"tipo": "test",
+			"enunciado": "Which of the following files are found in the /boot/ file system? (Choose TWO correct answers)",
+			"respuestas": {
+				"a": "Bash shell binaries",
+				"b": "Initial remdisk images",
+				"c": "Linux kernel images",
+				"d": "systemd target and service units",
+				"e": "fsck binaries"
+			},
+			"resp": ["b", "c"]
+		},
+		{
+			"numero": 16,
+			"tipo": "test",
+			"enunciado": "Which of the following Linux filesystems preallocate a fixed number of inodes when creating a new filesystem instead of generating them as needed? (Choose TWO correct answers)",
+			"respuestas": {
+				"a": "procfs",
+				"b": "ext2",
+				"c": "XFS",
+				"d": "ext3",
+				"e": "JFS"
+			},
+			"resp": ["b", "d"]
+		},
+		{
+			"numero": 17,
+			"tipo": "test",
+			"enunciado": "Which of the following setting for umask ensures that new files have the default permissions -rw-r-----?",
+			"respuestas": {
+				"a": "0017",
+				"b": "0640",
+				"c": "0027",
+				"d": "0038",
+				"e": "0227"
+			},
+			"resp": ["c"]
+		},
+		{
+			"numero": 18,
+			"tipo": "test",
+			"enunciado": "Which of the following statements are correct when comparing linux containers with traditional virtual machines (e.g. LXC vs KVM)? (Choose THREE correct answers)",
+			"respuestas": {
+				"a": "Containers on the same host can use different operating systems as the container hypervisor creates separate kernel execution environments",
+				"b": "Containers are completely decoupled from the host system's physical hardware and can only use emulated virtual hardware devices.",
+				"c": "The guest environmnet for fully virtualized machines is created by a hypervisor which provides virtual an emulated hardware devices",
+				"d": "Containers are a lightweight virtualization method where the kernel controls process isolation and resource management.",
+				"e": "Fully virtualized machines can run any operating system for a specific hardware and can only use emulated virtual machine."
+			},
+			"resp": ["d", "e"]
+		},
+		{
+			"numero": 19,
+			"tipo": "resp",
+			"enunciado": "What directory contains configuration files for additional yum repositories? (Specify the full path to the directory.)",
+			"resp": ["/etc/yum.repos.d"]
+		},
+		{
+			"numero": 20,
+			"tipo": "resp",
+			"enunciado": "Which file from the /proc/ file system contains a list of all currently mounted devices? (specify the full name of the file, including path)",
+			"resp": ["/proc/self/mounts"]
+		},
+		{
+			"numero": 21,
+			"tipo": "test",
+			"enunciado": "How many fields are in a syntactically correct line of /etc/fstab?",
+			"respuestas": {
+				"a": "3",
+				"b": "6",
+				"c": "5",
+				"d": "7",
+				"e": "4"
+			},
+			"resp": ["b"]
+		},
+		{
+			"numero": 22,
+			"tipo": "test",
+			"enunciado": "if the gzip compressed tar archive texts.tgz contains the files a.txt and b.txt, which files will be present in the current directory after running gunzip texts.tgz",
+			"respuestas": {
+				"a": "only a.txt.gz and b.txt.gz",
+				"b": "Only a.txt, b.txt and texts.tgz",
+				"c": "Only a.txt and b.txt",
+				"d": "Only texts.tar and texts.tgz",
+				"e": "Only texts.tar"
+			},
+			"resp": ["e"]
+		},
+		{
+			"numero": 23,
+			"tipo": "test",
+			"enunciado": "In a nested directory structure, which find command line option would be used to restrict the command to searching down a particular number of subdirectories?",
+			"respuestas": {
+				"a": "-s",
+				"b": "-maxlevels",
+				"c": "-dirmax",
+				"d": "-maxdepth",
+				"e": "-n"
+			},
+			"resp": ["d"]
+		},
+		{
+			"numero": 24,
+			"tipo": "test",
+			"enunciado": "in Bash, inserting 1>&2 after a command redirects...",
+			"respuestas": {
+				"a": "...standard output to standard input",
+				"b": "...standard error to standard input",
+				"c": "...standard input to standard error",
+				"d": "...standard output to standard error",
+				"e": "...standard error to standard output"
+			},
+			"resp": ["d"]
+		},
+		{
+			"numero": 25,
+			"tipo": "test",
+			"enunciado": "Running chmod 640 files.txt as a regular user doesn't update files.txt's permissions. what might be a reason why chmod cannot modify permissions? (Choose TWO correct answers)",
+			"respuestas": {
+				"a": "files.txt is owned by another user and a regular user cannot change the permissions of another user's file.",
+				"b": "files.txt has the SetUID bit set which imposes the restriction that only the root user can make changes to the file",
+				"c": "files.txt is a symbolic link whose permissions are a fixed value which can not be changed",
+				"d": "files.txt has the sticky bit set and regular user cannot remove this permission",
+				"e": "files.txt is a hard link whose permissions are inherited from the target and cannot be set directly"
+			},
+			"resp": ["a", "c"]
+		},
+		{
+			"numero": 26,
+			"tipo": "test",
+			"enunciado": "What is the default nice level when a process is started using the nice command?",
+			"respuestas": {
+				"a": "20",
+				"b": "10",
+				"c": "-10",
+				"d": "15",
+				"e": "0"
+			},
+			"resp": ["b"]
+		},
+		{
+			"numero": 27,
+			"tipo": "test",
+			"enunciado": "What is the effect of the -v option for the grep command?",
+			"respuestas": {
+				"a": "it only outputs non matching lines",
+				"b": "it changes the output order showing the last matching line first",
+				"c": "it enables color to highlight matching parts",
+				"d": "it shows the command's version information",
+				"e": "it outputs all lines and prefixes maching lines with a +"
+			},
+			"resp": ["a"]
+		},
+		{
+			"numero": 28,
+			"tipo": "test",
+			"enunciado": "When in Normal mode in vi, which character can be used to begin a reverse search of the text?",
+			"respuestas": {
+				"a": "/",
+				"b": "F",
+				"c": "r",
+				"d": "?",
+				"e": "s"
+			},
+			"resp": ["d"]
+		},
+		{
+			"numero": 29,
+			"tipo": "test",
+			"enunciado": "Which of the following commands determines a file's format by using a definition database file which contains information about all common file types?",
+			"respuestas": {
+				"a": "file",
+				"b": "pmagic",
+				"c": "magic",
+				"d": "hash",
+				"e": "type"
+			},
+			"resp": ["a"]
+		},
+		{
+			"numero": 30,
+			"tipo": "test",
+			"enunciado": "Which of the following commands can be used to display the inode number of a given file? (Choose TWO correct answers)",
+			"respuestas": {
+				"a": "ls",
+				"b": "inode",
+				"c": "cp",
+				"d": "stat",
+				"e": "ln"
+			},
+			"resp": ["a", "d"]
+		},
+		{
+			"numero": 31,
+			"tipo": "test",
+			"enunciado": "Which of the following commands creates or in case it already exists, overwrites a file called data with the output of ls?",
+			"respuestas": {
+				"a": "ls >>> data",
+				"b": "ls > data",
+				"c": "ls 3> data",
+				"d": "ls >> data",
+				"e": "ls >& data"
+			},
+			"resp": ["b"]
+		},
+		{
+			"numero": 32,
+			"tipo": "test",
+			"enunciado": "Which of the following commands display the IDs of all processes owned by root? (Choose TWO correct answers?",
+			"respuestas": {
+				"a": "pgrep -c root",
+				"b": "pgrep -f root",
+				"c": "pgrep -c 0",
+				"d": "pgrep -u 0",
+				"e": "pgrep -u root"
+			},
+			"resp": ["d", "e"]
+		},
+		{
+			"numero": 33,
+			"tipo": "test",
+			"enunciado": "Which of the following commands reads a file and creates separate chunks of a given size from the file's contents?",
+			"respuestas": {
+				"a": "ar",
+				"b": "cat",
+				"c": "parted",
+				"d": "split",
+				"e": "break"
+			},
+			"resp": ["d"]
+		},
+		{
+			"numero": 34,
+			"tipo": "test",
+			"enunciado": "Which of the following commands generates a list of user names from /etc/passwd along with their login shell?",
+			"respuestas": {
+				"a": "colrm 1,7 /etc/passwd",
+				"b": "chop -c : 1,7 /etc/passwd",
+				"c": "column -s : 1,7 /etc/passwd",
+				"d": "cut -d: -f1,7 /etc/passwd",
+				"e": "sort -t: -k1,7 /etc/passwd"
+			},
+			"resp": ["d"]
+		},
+		{
+			"numero": 35,
+			"tipo": "test",
+			"enunciado": "Which of the following commands print the current working directory when using a Bash shell?(Choose TWO correct answers)",
+			"respuestas": {
+				"a": "pwd",
+				"b": "printwd",
+				"c": "echo \"${PWD}\"",
+				"d": "echo \"${pwd}\"",
+				"e": "echo \"${WD}\""
+			},
+			"resp": ["a", "c"]
+		},
+		{
+			"numero": 36,
+			"tipo": "test",
+			"enunciado": "Which of the following commands shows how the shell handles a specific commnand?",
+			"respuestas": {
+				"a": "stat",
+				"b": "fileinfo",
+				"c": "case",
+				"d": "type",
+				"e": "where"
+			},
+			"resp": ["D"]
+		},
+		{
+			"numero": 37,
+			"tipo": "test",
+			"enunciado": "Which of the following properties of an existing file changes when a hard link pointing to that file is created?",
+			"respuestas": {
+				"a": "Modify timestamp",
+				"b": "Permissions",
+				"c": "inode number",
+				"d": "File size",
+				"e": "Link count"
+			},
+			"resp": ["e"]
+		},
+		{
+			"numero": 38,
+			"tipo": "test",
+			"enunciado": "Which of the following sequences in the vi editor saves the opened document and exits the editor? (Choose TWO correct answers)",
+			"respuestas": {
+				"a": "Ctrl XX",
+				"b": "Ctrl :w",
+				"c": "Esc :wq",
+				"d": "Esc ZZ",
+				"e": "Esc zz"
+			},
+			"resp": ["c", "d"]
+		},
+		{
+			"numero": 39,
+			"tipo": "test",
+			"enunciado": "Which of the following tools can show complete path of an executable file that the current shell would execute when starting a command without specifying its complete path? (Choose TWO correct answers)",
+			"respuestas": {
+				"a": "type",
+				"b": "pwd",
+				"c": "locate",
+				"d": "find",
+				"e": "which"
+			},
+			"resp": ["a", "e"]
+		},
+		{
+			"numero": 40,
+			"tipo": "resp",
+			"enunciado": "Following the Filesystem Hierarchy Standard (FHS), where should binaries that have been complied by the system administrator be placed in order to be made available to all users on the system? (Specify the full path to the directory.)",
+			"resp": "/bin, /usr/bin"
+		},
+		{
+			"numero": 41,
+			"tipo": "resp",
+			"enunciado": "Which command displays a list of all backgroud tasks running in the current shell? (Specify ONLY the command without any path or parameters)",
+			"resp": "jobs"
+		},
+		{
+			"numero": 42,
+			"tipo": "test",
+			"enunciado": "A user accidentally created the subdirectory \\dir in his home directory. Which of the following commnads will remove that directory?",
+			"respuestas": {
+				"a": "rmdir ~/'\\\\'dir",
+				"b": "rmdir ~/\\dir",
+				"c": "rmdir ~/' dir '",
+				"d": "rmdir \"~/\\dir\"",
+				"e": "rmdir '~/\\dir'"
+			},
+			"resp": ["a"]
+		},
+		{
+			"numero": 43,
+			"tipo": "test",
+			"enunciado": "Given the following two symbolic links in a System V init configuration /etc/rc1.d/K01apache2 /etc/rc2.d/S02apache2 When are the scripts executed that are referenced by these links? (Choose TWO correct answers)",
+			"respuestas": {
+				"a": "K01apache2 is never run because k indicates a deactivated service",
+				"b": "S02apache2 is run when runlevel 2 is entered",
+				"c": "S02apache2 is run when runlevel 2 is left",
+				"d": "K01apache2 is run when runlevel 1 is entered",
+				"e": "Both S02apache2 and K01apache2 are run during a system shutdown"
+			},
+			"resp": ["b", "d"]
+		},
+		{
+			"numero": 44,
+			"tipo": "test",
+			"enunciado": "In the vi editor, how can commands such as moving the cursor or copying lines into the buffer be issued multiple times or applied to multiple rows?",
+			"respuestas": {
+				"a": "By specifying the number after a command such as 14 or yj2 followed by escape",
+				"b": "By issuing a command such as :set repetition=4 which repeats everysubsequent command 4 times",
+				"c": "By specifying the number right in front of a command such as 41 or 2yj",
+				"d": "By slecting all affected lines using the shift and cursor keys beforeapplying the command",
+				"e": "By using the command : repeat followed by the nUmber and command"
+			},
+			"resp": ["c"]
+		},
+		{
+			"numero": 45,
+			"tipo": "test",
+			"enunciado": "What information can the lspci command display about the system hardware? (Choose THREE correct answers)",
+			"respuestas": {
+				"a": "PCI bus speed",
+				"b": "System battery type",
+				"c": "Ethernet MAC address",
+				"d": "Device vendor identification",
+				"e": "Device IRQ setting"
+			},
+			"resp": ["a", "d", "e"]
+		},
+		{
+			"numero": 46,
+			"tipo": "test",
+			"enunciado": "What is the correct way to set the default systemd boot target to multi-user?",
+			"respuestas": {
+				"a": "systemctl set-runlevel multi-user.target",
+				"b": "systemctl set-default multi-user.target",
+				"c": "systemctl set-boot multi-user.target",
+				"d": "systemctl isolate multi-user.target",
+				"e": "systemctl boot -p multi-user.target"
+			},
+			"resp": ["b"]
+		},
+		{
+			"numero": 47,
+			"tipo": "test",
+			"enunciado": "What is the output when the regular espression s/[ABC][abc]/xx/ is applied to the following string? ABCabc",
+			"respuestas": {
+				"a": "ABCabc",
+				"b": "xxCxxc",
+				"c": "Axxaxx",
+				"d": "ABxxbc",
+				"e": "xxxxxx"
+			},
+			"resp": ["d"]
+		},
+		{
+			"numero": 48,
+			"tipo": "test",
+			"enunciado": "What is the purpose of the xargs command?",
+			"respuestas": {
+				"a": "It passes arguments to an X server",
+				"b": "It asks a question, graphically, and returns the answer to the shell",
+				"c": "It allows specifying long options (like --help) for commnads that normally only accept short options(like -h)",
+				"d": "It reads standard input and builds up commands to execute",
+				"e": "It repeats the execution of a command using different parameters for each invocation"
+			},
+			"resp": ["d"]
+		},
+		{
+			"numero": 49,
+			"tipo": "test",
+			"enunciado": "When booting from the hard disk, a computer successfully loads the linux kernel and initramfs but hangs during the subsequent startup tasks. The system is booted using a linux based rescue CD to investigate the problem. Which of the following methods helps to identify the root cause of the problem?",
+			"respuestas": {
+				"a": "Using the dmesg command from the rescue CD's shell to view the original system's boot logs",
+				"b": "Using chroot to switch to the file system on the hard disk and use dmesg to view the logs",
+				"c": "Rebooting again from the hard drive since the system successfully booted from the rescue CD",
+				"d": "Investigating the file /proc/kmsg on the computer's hard disk for possible errors"
+			},
+			"resp": ["b"]
+		},
+		{
+			"numero": 50,
+			"tipo": "test",
+			"enunciado": "Where is the bootloader stored on the hard disk of a UEFI system?",
+			"respuestas": {
+				"a": "On the partition number 127",
+				"b": "On the EFI System Partition (ESP)",
+				"c": "In the Master Boot Record (MBR)",
+				"d": "On the partition labeled boot",
+				"e": "In the EFI Boot Record (EBR)"
+			},
+			"resp": ["b"]
+		},
+		{
+			"numero": 51,
+			"tipo": "test",
+			"enunciado": "Which of the following commands can perform searches on file contents using regular expressions?",
+			"respuestas": {
+				"a": "pgrep",
+				"b": "reggrep",
+				"c": "find",
+				"d": "locate",
+				"e": "grep"
+			},
+			"resp": ["e"]
+		},
+		{
+			"numero": 52,
+			"tipo": "test",
+			"enunciado": "Which of the following commands is used to change options and positional parameters within a running Bash shell?",
+			"respuestas": {
+				"a": "envsetup",
+				"b": "history",
+				"c": "setsh",
+				"d": "set",
+				"e": "bashcong"
+			},
+			"resp": ["d"]
+		},
+		{
+			"numero": 53,
+			"tipo": "test",
+			"enunciado": "Which of the following commands loads a kernel module along with any required dependency modules?",
+			"respuestas": {
+				"a": "depmod",
+				"b": "loadmod",
+				"c": "insmod",
+				"d": "module_install",
+				"e": "modprobe"
+			},
+			"resp": ["e"]
+		},
+		{
+			"numero": 54,
+			"tipo": "test",
+			"enunciado": "Which of the following commands outputs \"test\" to the shell?",
+			"respuestas": {
+				"a": "cat < ! EOT \ntest \nEOT",
+				"b": "cat ! < EOT \ntest \nEOT",
+				"c": "cat < | EOT \ntest \nEOT",
+				"d": "cat << EOT \ntest \nEOT",
+				"e": "cat &<EOT \ntest \nEOT"
+			},
+			"resp": ["d"]
+		},
+		{
+			"numero": 55,
+			"tipo": "test",
+			"enunciado": "Which of the following displays the manual page command from section 1?",
+			"respuestas": {
+				"a": "man command@1",
+				"b": "man -s 1 command",
+				"c": "man 1.command",
+				"d": "man 1 command",
+				"e": "man command (1)"
+			},
+			"resp": ["d"]
+		},
+		{
+			"numero": 56,
+			"tipo": "test",
+			"enunciado": "Which of the following signals is sent to a process when the key combination Ctrl+Z is pressed on the keyboard?",
+			"respuestas": {
+				"a": "SIGTERM",
+				"b": "SIGCONT",
+				"c": "SIGSTOP",
+				"d": "SIGINT",
+				"e": "SIGKILL"
+			},
+			"resp": ["c"]
+		},
+		{
+			"numero": 57,
+			"tipo": "test",
+			"enunciado": "Which of the following statements are correct about the initial RAM disk involved in the boot process of Linux? ( Choose TWO correct answers)",
+			"respuestas": {
+				"a": "An initramfs does not depend on a specific kernel version and is not changed after the installation",
+				"b": "After a successful boot, the initramfs contents are available in /run/initramfs/",
+				"c": "An initramfs file contains the MBR, the booloader and the Linux kernel",
+				"d": "An initramfs is a compressed file system archive, which can be unpacked to examine its contents",
+				"e": "The kernel uses the initramfs temporarily before accessing the real root file system"
+			},
+			"resp": ["d", "d"]
+		},
+		{
+			"numero": 58,
+			"tipo": "test",
+			"enunciado": "Which of the following statements is correct for a command ending with an & character?",
+			"respuestas": {
+				"a": "The command's is run as a direct child of the init process",
+				"b": "The command's output is executed by the shell",
+				"c": "The command's is run in background of the current shell",
+				"d": "The command's input is read from /dev/null",
+				"e": "The command's output is redirected to /dev/null"
+			},
+			"resp": ["C"]
+		},
+		{
+			"numero": 59,
+			"tipo": "resp",
+			"enunciado": "Which command used to change the priority of an already running process? (Specify ONLY the command without any path or parameters?",
+			"resp": "renice"
+		},
+		{
+			"numero": 60,
+			"tipo": "resp",
+			"enunciado": "Which System V init configuration file is commonly used to set the default runlevel? (Specify the full name of the file, inluding path)",
+			"resp": "/etc/initta"
+		}
+
+	]
+}
+
